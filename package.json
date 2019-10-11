@@ -1,0 +1,40 @@
+{
+  "name": "trufle-eth-loom-suite",
+  "version": "1.0.0",
+  "description": "Ambiente de desarrollo de contratos inteligentes en Ethereum y Loom",
+  "main": "index.js",
+  "scripts": {
+    "deploy:ganache": "truffle migrate --network dev_ganache_cli",
+    "reset:ganache": "truffle migrate --network dev_ganache_cli --reset",
+    "console:ganache": "truffle console --network dev_ganache_cli",
+    "deploy:ropsten": "truffle migrate --network ropsten",
+    "reset:ropsten": "truffle migrate --network ropsten --reset",
+    "console:ropsten": "truffle console --network ropsten",
+    "deploy:local_loom": "truffle migrate --network local_loom",
+    "reset:local_loom": "truffle migrate --network local_loom --reset",
+    "console:local_loom": "truffle console --network local_loom",
+    "deploy:extdev": "truffle migrate --network extdev_plasma_us1",
+    "reset:extdev": "truffle migrate --network extdev_plasma_us1 --reset",
+    "console:extdev": "truffle console --network extdev_plasma_us1",
+    "test": "truffle test"
+  },
+  "keywords": [
+    "ethereum",
+    "loom",
+    "solidity",
+    "smartcontrat",
+    "truffle"
+  ],
+  "author": "Jorge Szwako",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "dotenv": "^8.1.0",
+    "loom-truffle-provider": "^0.13.0",
+    "truffle": "^5.0.39",
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}
